@@ -3,6 +3,10 @@
  * The functions.php file behaves like a WordPress plugin, adding features and functionality to a 
  * WordPress site. You can use it to call WordPress functions and to define your own functions.
  */
+/** Post type */
+require_once( __DIR__ . '/functions/post-type/portfolio.php');
+require_once( __DIR__ . '/functions/post-type/blog.php');
+require_once( __DIR__ . '/functions/post-type/coding.php');
 /**
  * Enqueue scripts and styles
  */
@@ -14,3 +18,8 @@ function ph_job_list_enqueue_scripts() {
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/dist/js/bootstrap.min.js', array('jquery'), '20120206', true );
   }
   add_action( 'wp_enqueue_scripts', 'ph_job_list_enqueue_scripts' );
+
+function delete_post_type(){
+    unregister_post_type( 'post' );
+}
+add_action('init','delete_post_type');

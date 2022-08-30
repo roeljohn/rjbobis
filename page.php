@@ -8,16 +8,26 @@
  * page.php
  */
 
-get_header();
-
-while ( have_posts() ) :
-	the_post();
-	get_template_part( 'template-parts/content/content-page' );
-
-	// If comments are open or there is at least one comment, load up the comment template.
-	if ( comments_open() || get_comments_number() ) {
-		comments_template();
-	}
-endwhile;
-
-get_footer();
+get_header(); ?>
+          <div class="card">
+            <article class="card-body blog-post">
+  <?php if ( have_posts() ) : ?>
+ 
+    <!-- pagination here -->
+ 
+    <!-- the loop -->
+    <?php while ( have_posts() ) : the_post(); ?>
+      <?php the_content(); ?>
+    <?php endwhile; ?>
+    <!-- end of the loop -->
+ 
+    <!-- pagination here -->
+ 
+    <?php wp_reset_postdata(); ?>
+ 
+  <?php else : ?>
+    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+  <?php endif; ?>
+  </article>
+        </div>
+<?php get_footer(); ?>

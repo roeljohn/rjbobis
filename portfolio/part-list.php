@@ -1,5 +1,6 @@
 <div class="col">
               <div class="card h-100">
+                <a href="<?php the_permalink(); ?>">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><?php the_title(); ?></h5>
@@ -8,5 +9,6 @@
                 <div class="card-footer">
                   <small class="text-muted">Last updated 3 mins ago</small>
                 </div>
+                </a>
               </div>
             </div>

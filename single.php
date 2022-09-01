@@ -37,11 +37,7 @@ get_header(); ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
   </div>
-  <div class="col-md-4">
-      <div class="position-sticky bg-white border p-3 rounded-3" style="top: 2rem;">
-sdfasd
-      </div>
-    </div>
+  <?php get_template_part( 'section/part', 'sidebar' ); ?>
   </div>
 <?php get_footer(); ?>
 

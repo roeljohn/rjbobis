@@ -3,6 +3,11 @@
  * The functions.php file behaves like a WordPress plugin, adding features and functionality to a 
  * WordPress site. You can use it to call WordPress functions and to define your own functions.
  */
+/** Default */
+require_once( __DIR__ . '/functions/default/sidebar.php');
+require_once( __DIR__ . '/functions/default/pagination.php');
+require_once( __DIR__ . '/functions/default/global.php');
+
 /** Post type */
 require_once( __DIR__ . '/functions/post-type/portfolio.php');
 require_once( __DIR__ . '/functions/post-type/blog.php');

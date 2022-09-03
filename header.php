@@ -17,7 +17,7 @@
 <body class="bg-light">
 <div class="container">
   <main>
-    <div class="py-5 text-center">
+    <div class="pt-5 text-center">
       <img class="d-block mx-auto mb-4 rounded-5" src="http://localhost/rjbobis/wp-content/uploads/2022/09/1x1.jpg" alt="" width="72" height="auto">
       <h2>Roel John M. Bobis</h2>
       <p class="lead">

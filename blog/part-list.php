@@ -3,8 +3,7 @@
               <div class="d-flex gap-2 w-100 justify-content-between">
                 <div>
                   <h6 class="mb-0"><?php the_title(); ?></h6>
-                  <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
                 </div>
-                <small class="opacity-50 text-nowrap">now</small>
+                <small class="opacity-50 text-nowrap"><?php echo get_the_date(); ?></small>
               </div>
             </a>

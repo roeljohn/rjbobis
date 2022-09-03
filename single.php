@@ -10,6 +10,7 @@
 
 get_header(); ?>
 <div class="row gx-5">
+<hr class="col-md-12 my-5"/>
 <div class="col-md-8">
   <?php if ( have_posts() ) : ?>
  

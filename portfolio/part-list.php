@@ -1,14 +1,17 @@
 <div class="col">
-              <div class="card h-100">
+  <div class="card">
                 <a href="<?php the_permalink(); ?>">
-                <img src="..." class="card-img-top" alt="...">
+                <?php if ( has_post_thumbnail()) : ?>
+                  <img src="<?php the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">
+                <?php endif; ?>
+                
                 <div class="card-body">
                   <h5 class="card-title"><?php the_title(); ?></h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><?php the_excerpt(); ?></p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">Last updated <?php echo get_the_modified_time('F jS, Y'); ?></small>
                 </div>
                 </a>
-              </div>
-            </div>
+  </div>
+</div>

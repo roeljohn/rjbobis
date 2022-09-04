@@ -19,10 +19,10 @@ get_header(); ?>
     <!-- the loop -->
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="bg-white border p-3 rounded-3">
-	<?php the_title(); ?>
+	<h5><?php the_title(); ?></h5>
   </div>
   <div class="bg-white border p-3 rounded-3 my-2 ">
-	<?php echo get_the_date() ?>
+	<h6 class="mb-0"><?php echo get_the_date() ?></h6>
   </div>
   <div class="bg-white border p-3 rounded-3 my-2 ">
       <?php the_content(); ?>

@@ -7,6 +7,7 @@
 require_once( __DIR__ . '/functions/default/sidebar.php');
 require_once( __DIR__ . '/functions/default/pagination.php');
 require_once( __DIR__ . '/functions/default/global.php');
+require_once( __DIR__ . '/functions/default/settings.php');
 
 /** Post type */
 require_once( __DIR__ . '/functions/post-type/portfolio.php');

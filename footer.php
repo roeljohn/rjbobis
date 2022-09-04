@@ -8,11 +8,28 @@
 
 ?>
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <?php esc_html_e( '&copy; 2022 Roel John Bobis', 'rjbobis' ); ?>
+  <?php echo get_option( 'rj_copyright' ); ?>
     <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Privacy</a></li>
-      <li class="list-inline-item"><a href="#">Terms</a></li>
-      <li class="list-inline-item"><a href="#">Support</a></li>
+    <?php 
+      $args = array(
+        'order'                  => 'ASC',
+        'orderby'                => 'menu_order',
+        'post_type'              => 'nav_menu_item',
+        'post_status'            => 'publish',
+        'output'                 => ARRAY_A,
+        'output_key'             => 'menu_order',
+        'nopaging'               => true,
+        'update_post_term_cache' => false );
+
+        $menu_items = wp_get_nav_menu_items('footer', $args);
+        foreach ($menu_items as $menu_item) { ?>
+          <li class="list-inline-item">
+            <a href="<?php echo $menu_item->url; ?>">
+              <?php echo $menu_item->title; ?>
+            </a>
+          </li>
+      <?php  }
+      ?>
     </ul>
   </footer>
 </div>

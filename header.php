@@ -19,8 +19,8 @@
   <main>
     <div class="pt-5 text-center">
       <img class="d-block mx-auto mb-4 rounded-5" src="http://localhost/rjbobis/wp-content/uploads/2022/09/1x1.jpg" alt="" width="72" height="auto">
-      <h2>Roel John M. Bobis</h2>
-      <p class="lead">
-        Hi, I'm RJ experienced web developer and working with cross functional teams which consists of both local and remote members with different nationalities. Current expertise is on Front End / Wordpress Developer.
+      <h5><?php echo get_option( 'blogname' ); ?></h5>
+      <p >
+      <?php echo get_option( 'rj_description' ); ?>
       </p>
     </div>

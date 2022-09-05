@@ -5,7 +5,7 @@ $args = array(
 );
 $the_query = new WP_Query( $args ); ?>
 <div class="tab-pane fade show active" id="pills-portfolio" role="tabpanel" aria-labelledby="pills-portfolio-tab" tabindex="0">
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="row row-cols-1 row-cols-md-3 g-4" data-masonry='{"percentPosition": true }'>
     <?php if ( $the_query->have_posts() ) : ?>
       <!-- pagination here -->
       <!-- the loop -->

@@ -5,30 +5,26 @@
  * Rules
  * If tag.php does not exist, WordPress will look for a generic archive template, archive.php.
  */
+get_header(); ?>
+<div class="row gx-5">
+<div class="col-md-8">
+  <?php if ( have_posts() ) : ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+      <a href="<?php the_permalink(); ?>">
+        <div class="bg-white border p-3 rounded-3 mb-2">
+	        <?php the_title(); ?>
+        </div>
+      </a>
+    <?php endwhile; ?>
+    <!-- end of the loop -->
+	  <?php wpbeginner_numeric_posts_nav(); ?>
+    <!-- pagination here -->
+    <?php wp_reset_postdata(); ?>
+  <?php else : ?>
+    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+  <?php endif; ?>
+  </div>
+  <?php get_template_part( 'section/part', 'sidebar' ); ?>
+</div>
+<?php get_footer(); ?>
 
-get_header();
-
-if ( have_posts() ) { ?>
-	<?php
-		the_archive_title( '<h1 class="page-title">This is tag.php ', '</h1>' );
-	?>
-
-	<?php
-		while ( have_posts() ) {
-			the_post();
-
-			/*
-			* Include the Post-Format-specific template for the content.
-			* If you want to override this in a child theme, then include a file
-			* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-			*/
-			get_template_part( 'template-parts/content/content-excerpt', get_post_format() );
-		}
-
-		// Previous/next page navigation.
-} else {
-	// If no content, include the "No posts found" template.
-	get_template_part( 'template-parts/content/content-none' );
-}
-
-get_footer();

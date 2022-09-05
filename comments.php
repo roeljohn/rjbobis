@@ -11,12 +11,9 @@
 if ( post_password_required() ) {
 	return;
 }
-
 $wp_default_comment_count = get_comments_number();
 ?>
-
 <div id="comments" class="comments-area default-max-width <?php echo get_option( 'show_avatars' ) ? 'show-avatars' : ''; ?>">
-
 	<?php
 	if ( have_comments() ) :
 		?>
@@ -45,7 +42,6 @@ $wp_default_comment_count = get_comments_number();
 			);
 			?>
 		</ol><!-- .comment-list -->
-
 		<?php
 		the_comments_pagination(
 			array(
@@ -64,12 +60,10 @@ $wp_default_comment_count = get_comments_number();
 			)
 		);
 		?>
-
 		<?php if ( ! comments_open() ) : ?>
 			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wp-default' ); ?></p>
 		<?php endif; ?>
 	<?php endif; ?>
-
 	<?php
 	comment_form(
 		array(
@@ -79,5 +73,4 @@ $wp_default_comment_count = get_comments_number();
 		)
 	);
 	?>
-
-</div><!-- #comments -->
+</div>

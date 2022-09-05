@@ -1,21 +1,21 @@
 <?php 
 function wpbeginner_numeric_posts_nav() {
   
-    if( is_singular() )
-        return;
+  if( is_singular() )
+    return;
   
-    global $wp_query;
+  global $wp_query;
   
-    /** Stop execution if there's only 1 page */
-    if( $wp_query->max_num_pages <= 1 )
-        return;
+  /** Stop execution if there's only 1 page */
+  if( $wp_query->max_num_pages <= 1 )
+    return;
   
-    $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
-    $max   = intval( $wp_query->max_num_pages );
+  $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+  $max   = intval( $wp_query->max_num_pages );
   
-    /** Add current page to the array */
-    if ( $paged >= 1 )
-        $links[] = $paged;
+  /** Add current page to the array */
+  if ( $paged >= 1 )
+    $links[] = $paged;
   
     /** Add the pages around the current page to the array */
     if ( $paged >= 3 ) {

@@ -19,7 +19,7 @@ $wp_default_aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_a
 		<input placeholder="type any word" type="search" id="<?php echo esc_attr( $wp_default_unique_id ); ?>" class="form-control" value="<?php echo get_search_query(); ?>" name="s" />
 	</div>
 	<div class="p-2 flex-shrink-2">
-		<input type="submit" class="btn btn-primary" value="<?php echo esc_attr_x( 'Search', 'submit button', 'twentytwentyone' ); ?>" />
+		<input type="submit" class="btn btn-light border" value="<?php echo esc_attr_x( 'Search', 'submit button', 'twentytwentyone' ); ?>" />
 	</div>
 	
 </form>

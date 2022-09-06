@@ -7,8 +7,9 @@ Description: This theme is created to re-use in your future project.
 Version: 1.0.0
 Text Domain: wp-default
 */
-a{
+a, button{
   text-decoration: none;
+  color: #3a3939 !important;
 }
 p img{
   width: 100%;
@@ -106,4 +107,9 @@ pre {
 .navigation li a:hover,
 .navigation li.active a {
     background-color: #3C8DC5;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #ffffff;
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }

@@ -21,5 +21,4 @@ $wp_default_aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_a
 	<div class="p-2 flex-shrink-2">
 		<input type="submit" class="btn btn-light border" value="<?php echo esc_attr_x( 'Search', 'submit button', 'twentytwentyone' ); ?>" />
 	</div>
-	
 </form>

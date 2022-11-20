@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/o989gooyezos/public_html/
+    - /bin/cp -R wp-content/themes/wp-default-main $DEPLOYPATH

@@ -1,5 +1,5 @@
 <button 
-    class="btn btn btn-light border sticky-bottom float-end m-2 rounded-0" 
+    class="btn btn btn-light rj-shadow sticky-bottom float-end m-2 rounded-0" 
     type="button" data-bs-toggle="offcanvas" 
     data-bs-target="#offcanvasScrolling" 
     aria-controls="offcanvasScrolling">

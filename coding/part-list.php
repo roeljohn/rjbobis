@@ -1,4 +1,4 @@
-<a href="<?php the_permalink(); ?>" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+<a href="<?php the_permalink(); ?>" class="list-group-item list-group-item-action d-flex gap-3 py-3 border-0" aria-current="true">
   <span data-bs-toggle="tooltip" data-bs-title="The last tip!">
     <?php 
       if ($args){
@@ -8,7 +8,7 @@
       }          
     ?>
   </span>
-  <div class="d-flex gap-2 w-100 justify-content-between">
+  <div class="d-flex gap-2 w-100 justify-content-between align-items-center">
     <div>
       <h6 class="mb-0"><?php the_title(); ?></h6>
     </div>

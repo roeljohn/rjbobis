@@ -13,7 +13,7 @@ get_header(); ?>
   <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
       <a href="<?php the_permalink(); ?>">
-        <div class="bg-white border p-3 rounded-3 mb-2">
+        <div class="bg-white border-0 p-3 rounded-0 mb-2">
 	        <?php the_title(); ?>
         </div>
       </a>
@@ -23,7 +23,9 @@ get_header(); ?>
     <!-- pagination here -->
     <?php wp_reset_postdata(); ?>
   <?php else : ?>
-    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <div class="bg-white border-0 p-3 rounded-0 mb-2">
+      <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+    </div>
   <?php endif; ?>
   </div>
   <?php get_template_part( 'section/part', 'sidebar' ); ?>

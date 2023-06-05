@@ -8,7 +8,7 @@
  * page.php
  */
 get_header(); ?>
-<div class="card">
+<div class="card rounded-0">
   <article class="card-body blog-post">
     <?php if ( have_posts() ) : ?>
       <!-- the loop -->

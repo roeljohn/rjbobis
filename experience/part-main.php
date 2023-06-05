@@ -5,8 +5,8 @@ $args = array(
   'page_id' => 11
 );
 $the_query = new WP_Query( $args ); ?>
-<div class="tab-pane fade" id="pills-work-experience" role="tabpanel" aria-labelledby="pills-work-experience-tab" tabindex="0">
-  <div class="card">
+<div class="tab-pane fade show active" id="pills-work-experience" role="tabpanel" aria-labelledby="pills-work-experience-tab" tabindex="0">
+  <div class="bg-white card border-0 rounded-0">
     <article class="card-body blog-post">
       <?php if ( $the_query->have_posts() ) : ?>
         <!-- pagination here -->

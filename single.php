@@ -10,18 +10,18 @@
 */
 get_header(); ?>
 <div class="row gx-5">
-  <hr class="col-md-12 my-5"/>
   <div class="col-md-8">
     <?php if ( have_posts() ) : ?>
       <!-- the loop -->
       <?php while ( have_posts() ) : the_post(); ?>
-        <div class="bg-white border p-3 rounded-3">
-          <h5><?php the_title(); ?></h5>
+        <?php get_template_part( 'component/breadcrumbs/part', 'breadcrumbs' ); ?>
+        <div class="bg-white p-3 rounded-0">
+          <h5 class="mb-0 p-0"><?php the_title(); ?></h5>
         </div>
-        <div class="bg-white border p-3 rounded-3 my-2 ">
+        <div class="bg-white p-3 rounded-0 my-2 ">
           <h6 class="mb-0"><?php echo get_the_date() ?></h6>
         </div>
-        <div class="bg-white border p-3 rounded-3 my-2 ">
+        <div class="bg-white p-0 rounded-0 my-0 content">
           <?php the_content(); ?>
         </div>
       <?php endwhile; ?>

@@ -16,10 +16,9 @@
 
 get_header(); ?>
 <div class="row">
-  <hr class="col-md-12 my-5"/>
   <?php get_template_part( 'section/part', 'header' ); ?>
   <div class="tab-content" id="pills-tabContent">
-    <?php get_template_part( 'portfolio/part', 'main' ); ?>
+    <!--?php get_template_part( 'portfolio/part', 'main' ); ?-->
     <?php get_template_part( 'experience/part', 'main' ); ?>
     <?php get_template_part( 'coding/part', 'main' ); ?>
     <?php get_template_part( 'blog/part', 'main' ); ?>

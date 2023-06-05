@@ -5,7 +5,7 @@ $args = array(
 );
 $the_query = new WP_Query( $args ); ?>
 <div class="tab-pane fade" id="pills-coding" role="tabpanel" aria-labelledby="pills-coding-tab" tabindex="0">
-  <div class="list-group w-auto">
+  <div class="list-group w-auto rounded-0 bg-white">
     <?php if ( $the_query->have_posts() ) : ?>
       <!-- pagination here -->
       <!-- the loop -->

@@ -1,5 +1,5 @@
 <div class="col-md-4">
-  <div class="position-sticky bg-white border p-3 rounded-3" style="top: 2rem;">
+  <div class="position-sticky bg-white p-3 rounded-0" style="top: 2rem;">
     <?php
       /**
         * Purpose

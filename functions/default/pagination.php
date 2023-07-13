@@ -48,7 +48,7 @@ function wpbeginner_numeric_posts_nav() {
     sort( $links );
     foreach ( (array) $links as $link ) {
         $class = $paged == $link ? ' class="active"' : '';
-        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
+        printf( '<li%s><a class="bg-white" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
     }
   
     /** Link to last page, plus ellipses if necessary */
@@ -57,7 +57,7 @@ function wpbeginner_numeric_posts_nav() {
             echo '<li>…</li>' . "\n";
   
         $class = $paged == $max ? ' class="active"' : '';
-        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
+        printf( '<li%s><a class="bg-white border-0" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
     }
   
     /** Next Post Link */

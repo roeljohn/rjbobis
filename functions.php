@@ -14,6 +14,8 @@ require_once( __DIR__ . '/functions/default/breadcrumbs.php');
 require_once( __DIR__ . '/functions/post-type/portfolio.php');
 require_once( __DIR__ . '/functions/post-type/blog.php');
 require_once( __DIR__ . '/functions/post-type/coding.php');
+require_once( __DIR__ . '/functions/post-type/beaver-builder.php');
+require_once( __DIR__ . '/functions/post-type/elementor-builder.php');
 /**
  * Enqueue scripts and styles
  */

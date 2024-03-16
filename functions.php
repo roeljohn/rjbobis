@@ -9,6 +9,7 @@ require_once( __DIR__ . '/functions/default/pagination.php');
 require_once( __DIR__ . '/functions/default/global.php');
 require_once( __DIR__ . '/functions/default/settings.php');
 require_once( __DIR__ . '/functions/default/breadcrumbs.php');
+require_once( __DIR__ . '/functions/default/wpapi.php');
 
 /** Post type */
 require_once( __DIR__ . '/functions/post-type/portfolio.php');

@@ -20,11 +20,11 @@ function fetch_basic_api_shortcode(){
 add_shortcode( 'fetch_basic_api', 'fetch_basic_api_shortcode' );
 
 function fetch_coding_post_type_id_shortcode(){
-    $content = fetch_data_from_api( 'wp/v2/coding/295' );
+    $content = fetch_data_from_api( 'wp/v2/demo/266' );
     
     // Do something with the post data
     ob_start();
-    if ( ! empty( $postContent ) ) {
+    if ( ! empty( $content ) ) {
         echo '<h2>' . $content['title']['rendered'] . '</h2>';
         echo '<div>' . $content['content']['rendered'] . '</div>';
         // ... and so on

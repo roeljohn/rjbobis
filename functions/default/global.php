@@ -8,4 +8,3 @@ function delete_post_type(){
 add_action('init','delete_post_type');
 	
 add_theme_support( 'post-thumbnails' );
-

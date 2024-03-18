@@ -10,7 +10,6 @@ get_header(); ?>
       <!-- the loop -->
       <?php while ( have_posts() ) : the_post(); ?>
         <?php the_content(); ?>
-        <?php get_template_part( 'section/part', 'wp-api' ); ?>
       <?php endwhile; ?>
       <!-- end of the loop -->
       <!-- pagination here -->

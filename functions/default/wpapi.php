@@ -1,7 +1,7 @@
 <?php
 // Function to fetch data from the WordPress API
 function fetch_data_from_api( $endpoint ) {
-    $url = 'http://localhost/rjbobis/wp-json/' . $endpoint;
+    $url = 'https://roeljohnbobis.com/wp-json/' . $endpoint;
     $response = wp_remote_get( $url );
 
     if ( is_wp_error( $response ) ) {
@@ -14,4 +14,5 @@ function fetch_data_from_api( $endpoint ) {
 
     return $data;
 }
+
 

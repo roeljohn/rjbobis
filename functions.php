@@ -17,8 +17,15 @@ require_once( __DIR__ . '/functions/post-type/blog.php');
 require_once( __DIR__ . '/functions/post-type/coding.php');
 require_once( __DIR__ . '/functions/post-type/beaver-builder.php');
 require_once( __DIR__ . '/functions/post-type/elementor-builder.php');
+require_once( __DIR__ . '/functions/post-type/demo-content.php');
+
 /**
  * Enqueue scripts and styles
  */
 require_once( __DIR__ . '/functions/enqueue/theme_css_js.php');
+
+/**
+ * API
+ */
+require_once( __DIR__ . '/functions/wp-api/shortcode.php');
 

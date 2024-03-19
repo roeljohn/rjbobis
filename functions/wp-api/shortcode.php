@@ -3,6 +3,7 @@
 function fetch_basic_api_shortcode(){
         // Usage example: Fetch posts from the API
     $posts = fetch_data_from_api( 'wp/v2/coding' );
+   
     ob_start();
     if ( $posts ) {
         $limited_posts = array_slice( $posts, 0, 5 );

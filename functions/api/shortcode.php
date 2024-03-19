@@ -36,3 +36,20 @@ function fetch_coding_post_type_id_shortcode(){
 }
 
 add_shortcode( 'fetch_coding_post_type_id', 'fetch_coding_post_type_id_shortcode' );
+
+function fetch_pr_from_github_api(){
+
+    $pr_content = fetch_data_from_github_api(  );
+
+    ob_start();
+    if ( $pr_content ) {
+            foreach ( $pr_content as $content ) {
+                get_template_part( 'github_pr/part', 'list', $content ); 
+            }
+    } else {
+        echo 'Failed to fetch data from the API.';
+    }
+    return ob_get_clean();
+}
+
+add_shortcode( 'fetch_data_from_github_api_shortcode', 'fetch_pr_from_github_api' );

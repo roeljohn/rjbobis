@@ -22,6 +22,7 @@ get_header(); ?>
     <?php get_template_part( 'experience/part', 'main' ); ?>
     <?php get_template_part( 'coding/part', 'main' ); ?>
     <?php get_template_part( 'blog/part', 'main' ); ?>
+    <?php get_template_part( 'github_pr/part', 'main' ); ?>
   </div>
 </div>
 </main>

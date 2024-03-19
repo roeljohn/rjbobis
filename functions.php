@@ -27,5 +27,6 @@ require_once( __DIR__ . '/functions/enqueue/theme_css_js.php');
 /**
  * API
  */
-require_once( __DIR__ . '/functions/wp-api/shortcode.php');
+require_once( __DIR__ . '/functions/api/github.php');
+require_once( __DIR__ . '/functions/api/shortcode.php');
 

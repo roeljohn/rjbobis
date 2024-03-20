@@ -21,7 +21,7 @@
     <main>
       <div class="pt-5">
         <a href="<?php echo home_url(); ?>">
-          <img class="d-block mx-auto mb-4 rounded-5 rj-shadow" src="<?php echo home_url(); ?>/wp-content/uploads/2022/09/1x1.jpg" alt="" width="72" height="auto">
+          <img class="d-block mx-auto mb-4 rounded-5 rj-shadow" src="<?php echo home_url(); ?>/wp-content/uploads/2024/03/newprofileimg.png" alt="" width="72" height="auto">
         </a>
         <h5><?php echo get_option( 'blogname' ); ?></h5>
         <p >

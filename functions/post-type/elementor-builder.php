@@ -26,7 +26,7 @@ function custom_post_type_elementor_content_builder() {
     // Set other options for Custom Post Type
           
         $args = array(
-            'label'               => __( 'elementor_content_builder', 'twentytwentyone' ),
+            'label'               => __( 'demo elementor', 'twentytwentyone' ),
             'description'         => __( 'Elementor Builder news and reviews', 'twentytwentyone' ),
             'labels'              => $labels,
             // Features this CPT supports in Post Editor
@@ -52,9 +52,8 @@ function custom_post_type_elementor_content_builder() {
             'show_in_rest' => true,
       
         );
-          
         // Registering your Custom Post Type
-        register_post_type( 'elementorbuilder', $args );
+        register_post_type( 'demo-elementor', $args );
       
     }
       

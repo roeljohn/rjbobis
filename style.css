@@ -18,7 +18,7 @@ Text Domain: wp-default
 
 a, button{
   text-decoration: none;
-  color: #3a3939 !important;
+  color: #3a3939;
 }
 h1, h2, h3, h4, h5, h6{
   font-family: 'Poppins', sans-serif;
